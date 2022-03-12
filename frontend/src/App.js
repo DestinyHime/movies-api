@@ -12,7 +12,6 @@ import {
 //import components
 
 import AuthenticationProvider from "./authenticationProvider";
-import NavMenu from "./Components/header/navMenu.js";
 
 //import nav-pages
 import About from "./pages/About";
