@@ -1,0 +1,15 @@
+.search-bar {
+  background-color: white;
+  border-radius: 20px;
+  margin: 1rem 1rem 0;
+  padding: 10px 40px;
+  font-size: 1rem;
+}
+.search-button {
+  border-radius: 800px;
+  padding: 5px;
+  background-color: transparent;
+}
+.search-img {
+  width: 1rem;
+}

@@ -10,12 +10,13 @@ import {
 } from "react-router-dom";
 
 //import components
-import Header from "./Components/Header/header.js";
-import Poster from "./Components/Poster/poster.js";
+
 import AuthenticationProvider from "./authenticationProvider";
+import NavMenu from "./Components/header/navMenu.js";
 
 //import nav-pages
 import About from "./pages/About";
+import Home from "./pages/Home";
 import Fav from "./pages/Fav";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -27,33 +28,16 @@ function App() {
     <div className="App">
       <AuthenticationProvider>
         <Router>
-          <ul className="nav-bar">
-            <li>
-              <NavLink activeClassName="active" to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/favourite">
-                Favourite
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/login">
-                Login
-              </NavLink>
-            </li>
-          </ul>
           <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/favourite" element={<Fav />} />
+            <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/register" element={<Register />} />
+            {/* <Route path="/favourites" element={<Fav />} />
+            
+            <Route path="*" element={<NotFound />} />*/}
           </Routes>
         </Router>
       </AuthenticationProvider>
-      <Header></Header>
-      <Poster></Poster>
     </div>
   );
 }

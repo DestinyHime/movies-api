@@ -5,7 +5,7 @@ const MongoStore = require("connect-mongo");
 const { ONE_DAY } = require("../utils/constants");
 
 const sessionStore = MongoStore.create({
-  mongooseConnection: mongoose.connection,
+  mongoUrl: process.env.MONGO_URL,
   collection: "sessions",
 });
 
