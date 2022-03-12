@@ -1,4 +1,4 @@
-import Logo from "../Components/Header/logo";
+import Logo from "../Components/Header/logo.js";
 import NavMenu from "../Components/Header/navMenu.js";
 import PostersGrid from "../Components/Posters/postersGrid.js";
 import UserInfo from "../Components/UserInfo/userInfo.js";
