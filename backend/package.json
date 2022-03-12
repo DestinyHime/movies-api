@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./app.js",
+    "start": "node ./app.js",
     "build": "npm run install:client:deps && npm run build:client && npm run copy:files",
     "build:client": "cd ../frontend && npm run build && cd ../backend",
     "install:client:deps": "cd ../frontend && npm i && cd ../backend",
